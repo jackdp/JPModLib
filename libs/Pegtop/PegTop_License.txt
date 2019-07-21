@@ -1,0 +1,101 @@
+Pegtop Delphi Component Library
+
+Copyright 2004, 2005 by Jens Gruschel
+For more information visit http://www.pegtop.net/delphi
+Original date of publication: 01 Nov 2004
+Latest change:                15 Aug 2005
+
+________________________________________________________________________________
+
+
+LICENSE
+
+________________________________________________________________________________
+
+
+1. This notice may not be removed from or altered in any source distribution.
+
+  "Author" herein refers to Jens Gruschel (the creator of this library).
+  "Software" refers to all files included with this library.
+
+________________________________________________________________________________
+
+
+2. This software contains (at least) following source code files:
+
+   PegtopAlarmSchedules.pas
+   PegtopBroadcasts.pas
+   PegtopChunkFiles.pas
+   PegtopColorControls.pas
+   PegtopColorDialogs.pas
+   PegtopColorFilters.pas
+   PegtopColorGradientBars.pas
+   PegtopColorGradientControls.pas
+   PegtopColorGradientDialogs.pas
+   PegtopColorGradientEditors.pas
+   PegtopColorGradientFileDialogs.pas
+   PegtopColorGradientListBoxes.pas
+   PegtopColorGradientLists.pas
+   PegtopColorGradients.pas
+   PegtopColorServices.pas
+   PegtopColorUtils.pas
+   PegtopComboBoxes.pas
+   PegtopCommonReg.pas
+   PegtopControlEdits.pas
+   PegtopCPUUtils.pas
+   PegtopCursors.pas
+   PegtopDesktopMagnifiers.pas
+   PegtopFileDialogs.pas
+   PegtopFileVersionInfo.pas
+   PegtopFireButtons.pas
+   PegtopFormMagnets.pas
+   PegtopGraphicFileDialogs.pas
+   PegtopHashes.pas
+   PegtopLinks.pas
+   PegtopMessageReceivers.pas
+   PegtopMethodHashes.pas
+   PegtopMutexSections.pas
+   PegtopNetworkTimeSockets.pas
+   PegtopNumEdits.pas
+   PegtopNumForms.pas
+   PegtopPasswordEdits.pas
+   PegtopPriorityQueues.pas
+   PegtopProgressBars.pas
+   PegtopQualityLabels.pas
+   PegtopRadioGroups.pas
+   PegtopResampleUtils.pas
+   PegtopScrollers.pas
+   PegtopSharedMemory.pas
+   PegtopSystemImages.pas
+   PegtopSysUtils.pa
+   PegtopThemes.pas
+   PegtopThumbnails.pas
+   PegtopTimeUtils.pas
+   PegtopTrackBars.pas
+   PegtopWindowHooks.pa
+   
+   
+________________________________________________________________________________
+
+
+3. This software is distributed as a freeware. You are free to use it as part of
+   your application for any purpose including freeware, commercial and shareware
+   applications, provided some credit is given to the author.
+
+   The origin of this software must not be misrepresented; you must not claim
+   your authorship. All redistributions must retain the original copyright
+   notice and web site addresses.
+
+   Commercial redistribution of the library source is allowed only with an
+   explicit written permission from the author.
+
+   This software is provided 'as-is', without warranty of any kind, either
+   expressed or implied. In no event shall the author be held liable for any
+   damages arising from the use of this software.
+
+________________________________________________________________________________
+
+
+Jens Gruschel
+
+www.pegtop.net/delphi

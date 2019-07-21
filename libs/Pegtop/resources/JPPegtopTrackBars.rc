@@ -1,0 +1,9 @@
+
+
+//
+// Bitmap resources
+//
+JPPEGTOPTRACKBAR00 BITMAP         "bitmap1.bmp"
+JPPEGTOPTRACKBAR01 BITMAP         "bitmap2.bmp"
+JPPEGTOPTRACKBAR02 BITMAP         "bitmap3.bmp"
+JPPEGTOPTRACKBAR03 BITMAP         "bitmap4.bmp"

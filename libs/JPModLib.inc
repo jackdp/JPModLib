@@ -1,0 +1,2 @@
+const
+  PageName = 'JP Mods';

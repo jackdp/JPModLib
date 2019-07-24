@@ -491,6 +491,7 @@ type
     FConstrained: Boolean;
     FRangeOptions: TJPPegtopRangeOptions;
     FTagExt: TJppTagExt;
+    FDrawTriangleWhenDisabled: Boolean;
     procedure WMEditValue(var Msg: TMessage); message WM_PEGTOPSLIDEBAR_EDITVALUE;
     procedure NumEditChange(Sender: TObject);
     procedure NumEditClose(Sender: TObject; var Action: TCloseAction);
@@ -505,6 +506,7 @@ type
     procedure SetValue(Index: Integer; V: Double);
     procedure SetConstrained(V: Boolean);
     procedure SetTagExt(const Value: TJppTagExt);
+    procedure SetDrawTriangleWhenDisabled(const Value: Boolean);
   protected
     procedure Loaded; override;
     procedure DoEnter; override;
@@ -557,6 +559,7 @@ type
     property ParentShowHint;
     property ShowHint;
     property TagExt: TJppTagExt read FTagExt write SetTagExt;
+    property DrawTriangleWhenDisabled: Boolean read FDrawTriangleWhenDisabled write SetDrawTriangleWhenDisabled default True;
     property PositionMin: Integer index 0 read GetPosition write SetPosition; // should be last property
     property PositionMax: Integer index 1 read GetPosition write SetPosition; // should be last property
     property ValueMin: Double index 0 read GetValue write SetValue stored False; // should be last property
@@ -2639,6 +2642,7 @@ begin
   inherited;
   LabelCaption := 'Position: <min> - <max>';
   FTagExt := TJppTagExt.Create(Self);
+  FDrawTriangleWhenDisabled := True;
 end;
 
 destructor TJPPegtopRangeBar.Destroy;
@@ -2698,7 +2702,7 @@ begin
     ButtonPoint[1] := GetButtonPoint(1);
     ButtonRect := Rect(ButtonPoint[0].X, ButtonPoint[0].Y, ButtonPoint[1].X + ButtonSize.CX, ButtonPoint[1].Y + ButtonSize.CY);
     DrawButton(ACanvas, ButtonRect, State, Focused);
-    if Enabled then
+    if Enabled or FDrawTriangleWhenDisabled then
     begin
       if FOrientation = psoHorizontal then BitmapIndex := 1
       else BitmapIndex := 2;
@@ -2723,7 +2727,7 @@ begin
     ButtonPoint[0] := GetButtonPoint(0);
     ButtonRect := Bounds(ButtonPoint[0].X, ButtonPoint[0].Y, ButtonSize.CX, ButtonSize.CY);
     DrawButton(ACanvas, ButtonRect, State, (FButtonFocus = 0) and Focused);
-    if Enabled then
+    if Enabled or FDrawTriangleWhenDisabled then
     begin
       if FOrientation = psoHorizontal then BitmapIndex := 1
       else BitmapIndex := 2;
@@ -2740,7 +2744,7 @@ begin
     ButtonPoint[1] := GetButtonPoint(1);
     ButtonRect := Bounds(ButtonPoint[1].X, ButtonPoint[1].Y, ButtonSize.CX, ButtonSize.CY);
     DrawButton(ACanvas, ButtonRect, State, (FButtonFocus = 1) and Focused);
-    if Enabled then
+    if Enabled or FDrawTriangleWhenDisabled then
     begin
       if FOrientation = psoHorizontal then BitmapIndex := 0
       else BitmapIndex := 3;
@@ -3401,7 +3405,14 @@ begin
     end;
   end;
 end;
-  {$endregion TJPPegtopRangeBar: Position related}
+
+procedure TJPPegtopRangeBar.SetDrawTriangleWhenDisabled(const Value: Boolean);
+begin
+  FDrawTriangleWhenDisabled := Value;
+  PropsChanged(Self);
+end;
+
+{$endregion TJPPegtopRangeBar: Position related}
 
 
 procedure TJPPegtopRangeBar.MenuItemClick(Sender: TObject);

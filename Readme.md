@@ -1,4 +1,4 @@
-# JPModLib
+﻿# JPModLib
 
 **ModLib**
 
@@ -15,6 +15,10 @@
 **JPModLib** - Delphi components.
 
 Modified components from other open source packages / libraries.
+
+Supported Delphi versions: **2009** - **10.3 Rio**
+
+To install, you need the **JPLib** library from https://github.com/jackdp/JPLib and **JPPack** from https://github.com/jackdp/JPPack
 
 ---
 

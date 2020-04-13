@@ -3,7 +3,7 @@
 interface
 
 uses 
-  Winapi.Windows, System.SysUtils, System.Classes, JPEsGrad;
+  Windows, SysUtils, Classes, JPEsGrad;
 
 {$I ..\..\JPModLib.inc}
 

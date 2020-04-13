@@ -28,7 +28,7 @@ unit JPPegtopNumEdits;
 interface
 
 uses
-  Windows, Messages, Graphics, SysUtils, Classes, Controls, StdCtrls;
+  Windows, Messages, Graphics, SysUtils, Classes, Controls, StdCtrls, JPL.Strings;
 
 type
   TPegtopNumEditOption = (pneFixLength, pneEmptyAllowed, pneSpecialAllowed);
@@ -711,7 +711,7 @@ end;
 function TPegtopFloatEdit.IsValidChar(var Key: Char): Boolean;
 begin
   Result := ((Key >= '0') and (Key <= '9'))       // number
-    or (Key = FormatSettings.DecimalSeparator)                   // decimal point
+    or (Key = GetDecimalSeparator)                   // decimal point
     or ((Key = '-') and (FMinValue < 0))          // minus
     or ((Key < #32) and (Key <> Chr(VK_RETURN)))  // special key
     or ((pneSpecialAllowed in FOptions) and (Key = FSpecialChar) and ((Text = '') or (SelLength = Length(Text)))); // special char

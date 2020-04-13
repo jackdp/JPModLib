@@ -37,10 +37,16 @@
 
 unit JPPegtopTrackBars;
 
+  {$IF CompilerVersion >= 23}
+    //{$DEFINE DELPHIXE2_OR_ABOVE}
+    {$DEFINE HAS_SYSTEM_UITYPES}
+  {$IFEND}
+
 interface
 
 uses
-  Windows, Classes, Messages, Graphics, Forms, Controls, JPPegtopThemes, Vcl.GraphUtil, Vcl.StdCtrls, Vcl.ComCtrls, System.Types, System.UITypes,
+  Windows, Classes, Messages, Graphics, Forms, Controls, JPPegtopThemes, GraphUtil, StdCtrls, ComCtrls, Types,
+  {$IFDEF HAS_SYSTEM_UITYPES}System.UITypes,{$ENDIF}
   JPP.Common;
 
 const
@@ -53,7 +59,7 @@ type
     ColorTo: TColor;
     BorderColor: TColor;
     GripColor: TColor;
-    GradientDirection: Vcl.GraphUtil.TGradientDirection;
+    GradientDirection: GraphUtil.TGradientDirection;
   end;
 
   TJPPegtopTrackBarButtonVisualParams = record
@@ -276,7 +282,7 @@ type
     property TrackHighlightColor: TColor read FTrackHighlightColor write SetTrackHighlightColor default clBtnHighlight;
     property TrackInnerColor: TColor read FTrackInnerColor write SetTrackInnerColor default clBlack;
     property TrackInnerColorTo: TColor read FTrackInnerColorTo write SetTrackInnerColorTo default clNone;
-    property TrackInnerGradientDirection: TGradientDirection read FTrackInnerGradientDirection write SetTrackInnerGradientDirection default Vcl.GraphUtil.gdVertical;
+    property TrackInnerGradientDirection: TGradientDirection read FTrackInnerGradientDirection write SetTrackInnerGradientDirection default GraphUtil.gdVertical;
     property TrackDisabledColor: TColor read FTrackDisabledColor write SetTrackDisabledColor default clBtnFace;// $00E2E2E2;
     property TrackDisabledColorTo: TColor read FTrackDisabledColorTo write SetTrackDisabledColorTo default clNone;
     property TrackDisabledBorderColor: TColor read FTrackDisabledBorderColor write SetTrackDisabledBorderColor default clSilver;
@@ -746,7 +752,7 @@ begin
   FTicksVisible := False;
   FTickStyle := psSolid;
   FTrackInnerColorTo := clNone;
-  FTrackInnerGradientDirection := Vcl.GraphUtil.gdVertical;
+  FTrackInnerGradientDirection := GraphUtil.gdVertical;
   FTrackDisabledColor := clBtnFace; // $00E2E2E2;
   FTrackDisabledColorTo := clNone;
   FTrackDisabledBorderColor := clSilver;

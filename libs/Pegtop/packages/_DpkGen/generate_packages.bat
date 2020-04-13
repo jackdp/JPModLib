@@ -5,7 +5,7 @@ set Desc="JP PegTop"
 set BaseOutDir=..\
 set ShortDpkName=JPPegTop.dpk
 
-for %%x in (XE2,XE3,XE4,XE5,XE6,XE7,XE8) do (
+for %%x in (2009,2010,XE,XE2,XE3,XE4,XE5,XE6,XE7,XE8) do (
   DpkGen -t %Template% -d %Desc% -o %BaseOutDir%%%x\%ShortDpkName% -s %%x
 )
 

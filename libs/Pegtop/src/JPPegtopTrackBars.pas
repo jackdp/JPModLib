@@ -47,6 +47,7 @@ interface
 uses
   Windows, Classes, Messages, Graphics, Forms, Controls, JPPegtopThemes, GraphUtil, StdCtrls, ComCtrls, Types,
   {$IFDEF HAS_SYSTEM_UITYPES}System.UITypes,{$ENDIF}
+  JPL.Rects,
   JPP.Common;
 
 const

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="LazJPJVCL"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="..\..\src"/>
+        <OtherUnitFiles Value="..\..\src"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="JP JVCL"/>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="..\..\src\JPJVCL_FPC.inc"/>
+        <Type Value="Include"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\src\JpJvRollOutPanel.pas"/>
+        <UnitName Value="JpJvRollOutPanel"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\src\LazJPJVCLRegister.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LazJPJVCLRegister"/>
+      </Item3>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="JvStdCtrlsLazR"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="JvCoreLazR"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

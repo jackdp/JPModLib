@@ -1,0 +1,19 @@
+
+//{$IFDEF FPC}
+
+  //{$IF LCL_FullVersion >= 2010000} {$IFEND}
+
+  {$IF LCL_FullVersion >= 2010000}
+    {$DEFINE LCLVER_2010000_OR_ABOVE}
+  {$IFEND}
+
+  {$IF LCL_FullVersion >= 2000000}
+    {$DEFINE LCLVER_2000000_OR_ABOVE}
+  {$IFEND}
+
+  {$IF LCL_FullVersion >= 1080100}
+    {$DEFINE LCLVER_1080100_OR_ABOVE}
+  {$IFEND}
+
+
+//{$ENDIF} // FPC

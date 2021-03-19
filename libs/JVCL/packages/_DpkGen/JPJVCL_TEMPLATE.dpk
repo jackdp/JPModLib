@@ -1,0 +1,45 @@
+package JPJVCL;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION '<description>'}
+{$LIBSUFFIX '<LibSuffix>'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  JPPack,
+  Jcl,
+  JvCore,
+  JvStdCtrls;
+
+contains
+  JpJvSpinEdit in '..\..\src\JpJvSpinEdit.pas',
+  JpJvCheckBox in '..\..\src\JpJvCheckBox.pas',
+  JpJvRadioButton in '..\..\src\JpJvRadioButton.pas',
+  JPJVCL_Register in '..\..\src\JPJVCL_Register.pas';
+end.

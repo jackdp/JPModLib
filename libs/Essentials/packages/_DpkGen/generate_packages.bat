@@ -14,3 +14,4 @@ DpkGen -t %Template% -d %Desc% -o %BaseOutDir%10.1_Berlin\%ShortDpkName% -s Berl
 DpkGen -t %Template% -d %Desc% -o %BaseOutDir%10.2_Tokyo\%ShortDpkName% -s Tokyo
 DpkGen -t %Template% -d %Desc% -o %BaseOutDir%10.3_Rio\%ShortDpkName% -s Rio
 DpkGen -t %Template% -d %Desc% -o %BaseOutDir%10.4_Sydney\%ShortDpkName% -s Sydney
+DpkGen -t %Template% -d %Desc% -o %BaseOutDir%11.0_Alexandria\%ShortDpkName% -s Alexandria

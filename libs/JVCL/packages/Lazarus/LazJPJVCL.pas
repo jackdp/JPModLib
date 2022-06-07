@@ -8,7 +8,7 @@ unit LazJPJVCL;
 interface
 
 uses
-  JpJvRollOutPanel, LazJPJVCLRegister, LazarusPackageIntf;
+  LazJPJVCLRegister, LazarusPackageIntf;
 
 implementation
 

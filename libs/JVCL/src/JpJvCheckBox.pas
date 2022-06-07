@@ -12,7 +12,7 @@ uses
   Windows, SysUtils, Classes, Messages, Dialogs, Menus, Forms,
   ActnList, Controls, StdCtrls, ExtCtrls, Types,
   JPP.Common, JPP.Common.Procs, JPP.AnchoredControls,
-  JvCheckBox, JvJCLUtils, JclSysUtils
+  JvCheckBox, JvJCLUtils {$IFDEF DCC}, JclSysUtils{$ENDIF}
   ;
 
 type

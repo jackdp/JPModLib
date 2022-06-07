@@ -58,6 +58,8 @@
 			<DCCReference Include="JvCore.dcp"/>
 			<DCCReference Include="JvStdCtrls.dcp"/>
 			<DCCReference Include="..\..\src\JpJvSpinEdit.pas"/>
+			<DCCReference Include="..\..\src\JpJvCheckBox.pas"/>
+			<DCCReference Include="..\..\src\JpJvRadioButton.pas"/>
 			<DCCReference Include="..\..\src\JPJVCL_Register.pas"/>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>

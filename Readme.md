@@ -1,4 +1,4 @@
-﻿# JPModLib
+# JPModLib
 
 - [JPModLib](#jpmodlib)
   - [Overview](#overview)
@@ -6,10 +6,13 @@
     - [TJPEsGradient](#tjpesgradient)
   - [JPPegTop](#jppegtop)
     - [TJPPegTopTrackBar, TJPPegTopColorTrackBar, TJPPegTopRangeBar](#tjppegtoptrackbar-tjppegtopcolortrackbar-tjppegtoprangebar)
-  - [JPVCL](#jpvcl)
+  - [JPJVCL](#jpjvcl)
     - [TJPJvSpinEdit](#tjpjvspinedit)
     - [TJPJvCheckBox](#tjpjvcheckbox)
     - [TJPJvRadioButton](#tjpjvradiobutton)
+  - [JPLaz](#jplaz)
+    - [TJPLazSpinEdit](#tjplazspinedit)
+    - [TJPLazFloatSpinEdit](#tjplazfloatspinedit)
 
 
 ---
@@ -75,7 +78,7 @@ License for my modifications: **Public domain. You can do with my code whatever 
 
 ---
 
-## JPVCL
+## JPJVCL
 
 A modified components from the **JVCL** package (https://github.com/project-jedi/jvcl).
 
@@ -98,3 +101,23 @@ New properties:
 `TJvRadioButton` with the `AnchoredControls` support.
 
 License for my modifications: **Public domain. You can do with my code whatever you want without any cost and without any limitations.**
+
+## JPLaz
+
+A modified components from the [Lazarus IDE](https://www.lazarus-ide.org/).
+
+### TJPLazSpinEdit
+
+A modified `TSpinEdit`.  
+New properties:
+
+- `BoundLabel`
+- `RightLabel`
+- `AnchoredControls`
+
+### TJPLazFloatSpinEdit
+
+Similar to TJPLazSpinEdit.
+
+
+

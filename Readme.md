@@ -25,7 +25,7 @@ Supported Delphi versions: **2009** - **10.4 Sydney**
 
 To install, you need the **JPLib** library from https://github.com/jackdp/JPLib and **JPPack** from https://github.com/jackdp/JPPack
 
-To install **JPVCL** package, you need also **JVCL** for https://github.com/project-jedi/jvcl
+To install **JPJVCL** package, you need also **JVCL** for https://github.com/project-jedi/jvcl
 
 ---
 
@@ -95,6 +95,8 @@ New properties:
 ### TJPJvCheckBox
 
 `TJvCheckBox` with the `AnchoredControls` support.
+
+TJvCheckBox has one very useful property that Delphi lacks: AutoSize.
 
 ### TJPJvRadioButton
 
